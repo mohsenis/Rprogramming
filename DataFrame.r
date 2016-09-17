@@ -39,3 +39,24 @@ tail(theDF)
 class(theDF)
 
 theDF$Sport
+theDF[3,2]
+theDF[3,2:3]
+theDF[c(3,5), 2:3]
+theDF[c(3,5), c(2,3)]
+theDF[,3]
+theDF[,2:3]
+
+class(theDF[,3])
+theDF[, 3, drop = FALSE]   # dont change it to vector
+class(theDF[,3, drop = FALSE])
+
+theDF[2,]
+class(theDF[2,])
+
+theDF[, c("First", "Sport")] #another way of selecting data
+theDF[, c("Sport", "First")]
+theDF[,"Sport", drop = FALSE]
+
+theDF["Sport"] #another way
+theDF[["Sport"]]
+theDF[c("Sport", "First")]
